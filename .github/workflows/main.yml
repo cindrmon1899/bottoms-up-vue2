@@ -1,0 +1,14 @@
+name: Build Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: ./
+      with:
+        username: 'cindrmon1899'
+        reponame: 'bottoms-up-vue2'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
