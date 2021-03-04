@@ -1,5 +1,5 @@
 <template>
-  <p>Forms Under Construction</p>
+  <p>Forms Under Construction.</p>
 </template>
 
 <script>
