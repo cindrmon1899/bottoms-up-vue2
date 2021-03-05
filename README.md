@@ -1,7 +1,9 @@
 # Bottom's Up!
 > Machine Problems 2 - 8 as of now
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/93e9aaa4-07f4-4cb3-9d6d-9323468f074a/deploy-status)](https://app.netlify.com/sites/bottoms-up-vue2/deploys)
+Check out the deployed site [here](https://bottoms-up-vue2.sandbox.cindrmon.blue/#/)!
+
+Deployed through Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/93e9aaa4-07f4-4cb3-9d6d-9323468f074a/deploy-status)](https://app.netlify.com/sites/bottoms-up-vue2/deploys)
 
 ## Requirements:
 1. Node.js
