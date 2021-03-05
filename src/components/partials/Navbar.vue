@@ -34,3 +34,14 @@
     </b-navbar>
   </header>
 </template>
+
+<script>
+// import Login from "@/components/widgets/Login";
+// import Register from "@/components/widgets/Register";
+// export default {
+//   components: {
+//     Login,
+//     Register
+//   }
+// }
+</script>
