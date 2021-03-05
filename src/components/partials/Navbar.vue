@@ -1,5 +1,6 @@
+/* eslint-disable prettier/prettier */
 <template>
-  <header class="sticky">
+  <div class="navigation-bar">
     <b-navbar toggleable="md" type="dark" class="bg-dark" sticky>
       <b-navbar-brand to="/">
         <img src="favicon.ico" alt="bottom's up logo" srcset="" />
@@ -27,21 +28,130 @@
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-button type="button" class="btn-outline-secondary">Login</b-button>
-          <b-button type="button" class="btn-secondary">Register</b-button>
+          <b-button variant="outline-secondary" v-b-modal.loginForm
+            >Login</b-button
+          >
+          <b-button variant="secondary" v-b-modal.registerForm
+            >Register</b-button
+          >
         </b-navbar-nav>
+
+        <div class="hardcoded-modals">
+          <b-modal
+            id="loginForm"
+            header-bg-variant="dark"
+            body-bg-variant="dark"
+            footer-bg-variant="dark"
+            title="Login"
+          >
+            <b-form @submit="onSubmitLogin">
+              <b-form-group id="username">
+                <b-form-input
+                  id="usernameInput"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </b-form-group>
+              <b-form-group id="password">
+                <b-form-input
+                  id="passwordInput"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </b-form-group>
+              <b-button type="submit">Login</b-button>
+            </b-form>
+            <template #modal-footer>
+              <b-button
+                type="button"
+                @click="closeModalLogin"
+                variant="outline-secondary"
+                >Cancel</b-button
+              >
+            </template>
+          </b-modal>
+          <b-modal
+            id="registerForm"
+            header-bg-variant="dark"
+            body-bg-variant="dark"
+            footer-bg-variant="dark"
+            title="Register"
+          >
+            <b-form @submit="onSubmitRegister">
+              <b-form-group id="name">
+                <b-form-input
+                  id="nameInput"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+              </b-form-group>
+              <b-form-group id="email">
+                <b-form-input
+                  id="emailInput"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </b-form-group>
+              <b-form-group id="username">
+                <b-form-input
+                  id="usernameInput"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+              </b-form-group>
+              <b-form-group id="password">
+                <b-form-input
+                  id="passwordInput"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+              </b-form-group>
+              <b-button type="submit">Register</b-button>
+            </b-form>
+            <template #modal-footer>
+              <b-button
+                type="button"
+                @click="closeModalRegister"
+                variant="outline-secondary"
+                >Cancel</b-button
+              >
+            </template>
+          </b-modal>
+        </div>
       </b-collapse>
     </b-navbar>
-  </header>
+  </div>
 </template>
 
 <script>
-// import Login from "@/components/widgets/Login";
-// import Register from "@/components/widgets/Register";
-// export default {
-//   components: {
-//     Login,
-//     Register
-//   }
-// }
+export default {
+  methods: {
+    onSubmitLogin() {
+      alert("Submitted!");
+      this.$bvModal.hide("loginForm");
+    },
+    onSubmitRegister() {
+      alert("Signed Up!");
+      this.$bvModal.hide("registerForm");
+    },
+    closeModalLogin() {
+      this.$bvModal.hide("loginForm");
+    },
+    closeModalRegister() {
+      this.$bvModal.hide("registerForm");
+    }
+  }
+};
 </script>
+
+<style lang="scss" scoped>
+.btn {
+  margin: auto 5px;
+}
+</style>

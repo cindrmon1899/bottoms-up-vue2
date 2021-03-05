@@ -17,12 +17,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap");
 
 /** Font Manipulation */
 p,
-label {
+label,
+.modal-body {
   font-family: "Roboto Condensed", sans-serif;
   color: #ffebcd;
 }
@@ -36,6 +37,7 @@ h6,
 .navbar-brand,
 .nav-item,
 .nav-link,
+.modal-header,
 a:hover {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
