@@ -59,12 +59,14 @@
         header-bg-variant="dark"
         footer-bg-variant="dark"
       >
-        <h1>Customer Name: {{ form.name }}</h1>
-        <h5>Email: {{ form.email }}</h5>
-        <p v-show="form.message != ''">Message: {{ form.message }}</p>
-        <h3>Drink Category: {{ form.category }}</h3>
-        <h3>Drink Ordered: {{ form.drink }}</h3>
-        <h3>Quantity: {{ form.quantity }}</h3>
+        <h2>Your Current Transaction:</h2>
+        <h3>Name: {{ form.name }}</h3>
+        <h3>Email: {{ form.email }}</h3>
+        <h6 v-show="form.message != ''">Message:</h6>
+        <p v-show="form.message != ''">{{ form.message }}</p>
+        <h5>Drink Category: {{ form.category }}</h5>
+        <h5>Drink Ordered: {{ form.drink }}</h5>
+        <h5>Quantity: {{ form.quantity }}</h5>
         <template #modal-footer>
           <b-button
             type="button"
@@ -90,7 +92,7 @@ export default {
         message: "",
         category: "",
         drink: null,
-        quantity: 0
+        quantity: null
       },
       confirm: false,
       coffeeDrinks: [
