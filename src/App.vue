@@ -32,9 +32,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.nav-link,
-.navbar-brand {
+h6 {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
   color: #ffebcd;
@@ -42,13 +40,6 @@ h6,
 
 footer {
   color: #ffebcd;
-}
-
-.navbar-brand {
-  font-size: 24pt;
-}
-.nav-link {
-  font-size: 18pt;
 }
 
 /** All Horizontal Rules */

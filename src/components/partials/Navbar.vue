@@ -1,77 +1,52 @@
 <template>
   <header class="sticky">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container-fluid">
-        <router-link to="/" class="navbar-brand">
-          <img src="favicon.ico" alt="" srcset="" />
-          Bottom's Up!
-        </router-link>
+    <b-navbar toggleable="md" type="dark" class="bg-dark" sticky>
+      <b-navbar-brand to="/">
+        <img src="favicon.ico" alt="bottom's up logo" srcset="" />
+        Bottom's Up!
+      </b-navbar-brand>
 
-        <!-- Responsive Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item to="/about">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> About
+          </b-nav-item>
+          <b-nav-item to="/drinks/coffee">
+            <i class="fas fa-mug-hot"></i> Coffee
+          </b-nav-item>
+          <b-nav-item to="/drinks/tea">
+            <i class="fas fa-leaf"></i> Tea
+          </b-nav-item>
+          <b-nav-item to="/drinks/shakes">
+            <i class="fas fa-blender"></i> Shakes
+          </b-nav-item>
+          <b-nav-item to="/order">
+            <i class="fas fa-scroll"></i> Order
+          </b-nav-item>
+        </b-navbar-nav>
 
-        <!-- NavBar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/about">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> About
-              </router-link>
-            </li>
-
-            <li class="nav-item">
-              <router-link class="nav-link" to="/drinks/coffee">
-                <i class="fas fa-mug-hot"></i> Coffee
-              </router-link>
-            </li>
-
-            <li class="nav-item">
-              <router-link class="nav-link" to="/drinks/tea">
-                <i class="fas fa-leaf"></i> Tea
-              </router-link>
-            </li>
-
-            <li class="nav-item">
-              <router-link class="nav-link" to="/drinks/shakes">
-                <i class="fas fa-blender"></i> Shakes
-              </router-link>
-            </li>
-
-            <li class="nav-item">
-              <router-link class="nav-link" to="/order">
-                <i class="fas fa-scroll"></i> Order
-              </router-link>
-            </li>
-          </ul>
-
-          <div class="my-2 my-lg-0">
-            <button
-              class="btn btn-outline-secondary"
-              data-toggle="modal"
-              data-target="#login"
-            >
-              Login
-            </button>
-            <button
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#register"
-            >
-              Register
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
+        <b-navbar-nav class="ml-auto">
+          <b-button type="button" class="btn-outline-secondary">Login</b-button>
+          <b-button type="button" class="btn-secondary">Register</b-button>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </header>
 </template>
+
+<style scoped>
+.navbar-brand,
+.nav-item {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  color: #ffebcd;
+}
+
+.navbar-brand {
+  font-size: 24pt;
+}
+.nav-item {
+  font-size: 18pt;
+}
+</style>
