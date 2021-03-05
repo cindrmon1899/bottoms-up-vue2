@@ -4,7 +4,7 @@
       title="Coffee"
       subtitle="Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. When coffee berries turn from green to bright red in color – indicating ripeness – they are picked, processed, and dried. Dried coffee seeds are roasted to varying degrees, depending on the desired flavor. (Wikipedia)"
     />
-    <b-tabs content-class="mt-3" nav-class="navbar-dark" fill>
+    <b-tabs content-class="mt-3" fill>
       <b-tab v-for="(drink, index) in coffeeDrinks" :key="index">
         <template #title>
           <i class="fas fa-mug-hot" aria-hidden="true"></i>

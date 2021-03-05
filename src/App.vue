@@ -32,10 +32,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.navbar-brand,
+.nav-item,
+.nav-link,
+a:hover {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
   color: #ffebcd;
+}
+
+.navbar-brand {
+  font-size: 24pt;
+}
+.nav-item {
+  font-size: 18pt;
 }
 
 footer {

@@ -34,19 +34,3 @@
     </b-navbar>
   </header>
 </template>
-
-<style scoped>
-.navbar-brand,
-.nav-item {
-  font-family: "Roboto Slab", serif;
-  font-weight: 500;
-  color: #ffebcd;
-}
-
-.navbar-brand {
-  font-size: 24pt;
-}
-.nav-item {
-  font-size: 18pt;
-}
-</style>
