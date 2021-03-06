@@ -1,12 +1,13 @@
-/* eslint-disable prettier/prettier */
 <template>
   <div class="navigation-bar">
     <b-navbar toggleable="md" type="dark" class="bg-dark" sticky>
+      <!-- Navbar Brand -->
       <b-navbar-brand to="/">
         <img src="favicon.ico" alt="bottom's up logo" srcset="" />
         Bottom's Up!
       </b-navbar-brand>
 
+      <!-- What's left of the Navbar -->
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -27,6 +28,7 @@
           </b-nav-item>
         </b-navbar-nav>
 
+        <!-- What's right of the Navbar -->
         <b-navbar-nav class="ml-auto">
           <b-button variant="outline-secondary" v-b-modal.loginForm
             >Login</b-button
@@ -36,7 +38,9 @@
           >
         </b-navbar-nav>
 
+        <!-- TODO: Give these modals individual components -->
         <div class="hardcoded-modals">
+          <!-- Login Modal Form -->
           <b-modal
             id="loginForm"
             header-bg-variant="dark"
@@ -72,6 +76,7 @@
               >
             </template>
           </b-modal>
+          <!-- Register Form -->
           <b-modal
             id="registerForm"
             header-bg-variant="dark"
