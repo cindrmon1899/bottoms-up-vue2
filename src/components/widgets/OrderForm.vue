@@ -14,7 +14,7 @@
         <b-form-input
           id="email"
           v-model="form.email"
-          type="text"
+          type="email"
           placeholder="email@example.com"
           required
         />
