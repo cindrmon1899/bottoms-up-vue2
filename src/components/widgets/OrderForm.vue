@@ -32,21 +32,22 @@
         />
       </b-form-group>
       <b-form-group id="category" label="Category: " label-for="category">
-        <b-form-radio v-model="form.category" value="coffee"
+        <b-form-radio v-model="form.category" value="coffee" required
           >Coffee</b-form-radio
         >
-        <b-form-radio v-model="form.category" value="tea">Tea</b-form-radio>
-        <b-form-radio v-model="form.category" value="shake">Shake</b-form-radio>
+        <b-form-radio v-model="form.category" value="tea" required>Tea</b-form-radio>
+        <b-form-radio v-model="form.category" value="shake" required>Shake</b-form-radio>
       </b-form-group>
       <b-form-group id="drink" label="Select Drinks: " label-for="drink">
         <b-form-select
           id="drink"
           v-model="form.drink"
           :options="drinkOptions"
+          required
         />
       </b-form-group>
       <b-form-group id="quantity" label="Quantity: " label-for="quantity">
-        <b-form-input id="quantity" v-model="form.quantity" type="number" />
+        <b-form-input id="quantity" v-model="form.quantity" type="number" required/>
       </b-form-group>
       <b-button type="submit" variant="primary">Confirm Order</b-button>
 
