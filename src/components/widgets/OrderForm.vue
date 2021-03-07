@@ -120,7 +120,7 @@ export default {
     onConfirm(event) {
       event.preventDefault();
       this.confirm = !this.confirm;
-    }
+    },
     onSubmit() {
       this.name = "";
       this.email = "";
