@@ -1,6 +1,6 @@
 <template>
   <div class="form container">
-    <b-form @submit="confirm = !confirm" prevent>
+    <b-form @submit="onConfirm">
       <b-form-group id="name" label="Name: " label-for="name">
         <b-form-input
           id="name"
@@ -117,6 +117,10 @@ export default {
     };
   },
   methods: {
+    onConfirm(event) {
+      event.preventDefault();
+      this.confirm = !this.confirm;
+    }
     onSubmit() {
       this.name = "";
       this.email = "";
