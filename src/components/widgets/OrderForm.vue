@@ -35,8 +35,12 @@
         <b-form-radio v-model="form.category" value="coffee" required
           >Coffee</b-form-radio
         >
-        <b-form-radio v-model="form.category" value="tea" required>Tea</b-form-radio>
-        <b-form-radio v-model="form.category" value="shake" required>Shake</b-form-radio>
+        <b-form-radio v-model="form.category" value="tea" required
+          >Tea</b-form-radio
+        >
+        <b-form-radio v-model="form.category" value="shake" required
+          >Shake</b-form-radio
+        >
       </b-form-group>
       <b-form-group id="drink" label="Select Drinks: " label-for="drink">
         <b-form-select
@@ -47,7 +51,12 @@
         />
       </b-form-group>
       <b-form-group id="quantity" label="Quantity: " label-for="quantity">
-        <b-form-input id="quantity" v-model="form.quantity" type="number" required/>
+        <b-form-input
+          id="quantity"
+          v-model="form.quantity"
+          type="number"
+          required
+        />
       </b-form-group>
       <b-button type="submit" variant="primary">Confirm Order</b-button>
 
