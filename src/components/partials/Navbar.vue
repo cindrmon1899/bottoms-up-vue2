@@ -137,13 +137,17 @@
 <script>
 export default {
   methods: {
-    onSubmitLogin() {
+    onSubmitLogin(event) {
+      event.preventDefault();
       alert("Submitted!");
       this.$bvModal.hide("loginForm");
+      this.$router.push("/empty");
     },
-    onSubmitRegister() {
+    onSubmitRegister(event) {
+      event.preventDefault();
       alert("Signed Up!");
       this.$bvModal.hide("registerForm");
+      this.$router.push("/empty");
     },
     closeModalLogin() {
       this.$bvModal.hide("loginForm");

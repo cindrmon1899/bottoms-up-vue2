@@ -22,22 +22,32 @@ const routes = [
   {
     path: "/drinks/coffee",
     name: "Coffee",
-    component: () => import("../views/drinks/Coffee.vue")
+    component: () =>
+      import(/* webpackChunkName: "coffee" */ "../views/drinks/Coffee.vue")
   },
   {
     path: "/drinks/tea",
     name: "Tea",
-    component: () => import("../views/drinks/Tea.vue")
+    component: () =>
+      import(/* webpackChunkName: "tea" */ "../views/drinks/Tea.vue")
   },
   {
     path: "/drinks/shakes",
     name: "Shakes",
-    component: () => import("../views/drinks/Shakes.vue")
+    component: () =>
+      import(/* webpackChunkName: "shakes" */ "../views/drinks/Shakes.vue")
   },
   {
     path: "/order",
     name: "Order",
-    component: () => import("../views/Order.vue")
+    component: () =>
+      import(/* webpackChunkName: "order" */ "../views/Order.vue")
+  },
+  {
+    path: "/empty",
+    name: "Empty",
+    component: () =>
+      import(/* webpackChunkName: "empty" */ "../views/Empty.vue")
   }
 ];
 
