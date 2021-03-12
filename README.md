@@ -1,5 +1,5 @@
 # Bottom's Up!
-> Machine Problems 2 - 8 as of now
+> Machine Problems 2 - 8, 10 onwards as of now
 
 Check out the deployed site [here](https://bottoms-up-vue2.sandbox.cindrmon.blue/#/)!
 
