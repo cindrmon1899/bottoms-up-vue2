@@ -45,6 +45,17 @@
 <script>
 import Jumbotron from "@/components/objects/Jumbotron";
 export default {
+  name: "Home",
+  metaInfo: {
+    title: "Welcome!",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Drink up, it's drinking time! WARNING!: Non-Alcoholic, but pure caffeine"
+      }
+    ]
+  },
   components: {
     Jumbotron
   }

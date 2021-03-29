@@ -23,6 +23,16 @@
 import Jumbotron from "@/components/objects/Jumbotron";
 import CommunityBlock from "@/components/objects/CommunityBlock.vue";
 export default {
+  name: "About",
+  metaInfo: {
+    title: "About",
+    meta: [
+      {
+        name: "description",
+        content: "About our coffee shop!"
+      }
+    ]
+  },
   components: {
     Jumbotron,
     CommunityBlock

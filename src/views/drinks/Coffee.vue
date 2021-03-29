@@ -25,6 +25,16 @@
 import Jumbotron from "@/components/objects/Jumbotron";
 import DrinksBlock from "@/components/objects/DrinksBlock";
 export default {
+  name: "Coffee",
+  metaInfo: {
+    title: "Coffee",
+    meta: [
+      {
+        name: "description",
+        content: "Now this is the caffeine we've been talking about!"
+      }
+    ]
+  },
   components: {
     Jumbotron,
     DrinksBlock

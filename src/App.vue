@@ -10,6 +10,11 @@
 import Navbar from "@/components/partials/Navbar";
 import Footer from "@/components/partials/Footer";
 export default {
+  name: "App",
+  metaInfo: {
+    title: "Bottom's Up",
+    titleTemplate: "%s :: Bottom's Up"
+  },
   components: {
     Navbar,
     Footer
