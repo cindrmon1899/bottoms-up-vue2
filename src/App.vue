@@ -13,7 +13,42 @@ export default {
   name: "App",
   metaInfo: {
     title: "Bottom's Up",
-    titleTemplate: "%s :: Bottom's Up"
+    titleTemplate: "%s :: Bottom's Up",
+    meta: [
+      // google metatags
+      {
+        itemprop: "name",
+        template: chunk => `${chunk} :: Bottom's Up`,
+        vmid: "name"
+      },
+      {
+        itemprop: "image",
+        content:
+          "https://bottoms-up-vue2.sandbox.cindrmon.blue/img/cafe1-patrick-tomasso.3bf4d61d.jpg"
+      },
+      // facebook metatags
+      {
+        property: "og:title",
+        template: chunk => `${chunk} :: Bottom's Up`,
+        vmid: "og:title"
+      },
+      {
+        property: "og:image",
+        content:
+          "https://bottoms-up-vue2.sandbox.cindrmon.blue/img/cafe1-patrick-tomasso.3bf4d61d.jpg"
+      },
+      // twitter metatags
+      {
+        name: "twitter:title",
+        template: chunk => `${chunk} :: Bottom's Up`,
+        vmid: "twitter:title"
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://bottoms-up-vue2.sandbox.cindrmon.blue/img/cafe1-patrick-tomasso.3bf4d61d.jpg"
+      }
+    ]
   },
   components: {
     Navbar,

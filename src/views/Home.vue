@@ -53,6 +53,36 @@ export default {
         name: "description",
         content:
           "Drink up, it's drinking time! WARNING!: Non-Alcoholic, but pure caffeine"
+      },
+      // google metatags
+      {
+        itemprop: "name",
+        content: "Welcome!"
+      },
+      {
+        itemprop: "description",
+        content:
+          "Drink up, it's drinking time! WARNING!: Non-Alcoholic but pure caffeine"
+      },
+      // facebook metatags
+      {
+        property: "og:title",
+        content: "Welcome!"
+      },
+      {
+        property: "og:description",
+        content:
+          "Drink up, it's drinking time! WARNING!: Non-Alcoholic but pure caffeine"
+      },
+      // twitter metatags
+      {
+        name: "twitter:title",
+        content: "Welcome!"
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Drink up, it's drinking time! WARNING!: Non-Alcoholic but pure caffeine"
       }
     ]
   },
